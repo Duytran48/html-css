@@ -1,0 +1,126 @@
+
+*, *::before,*::after {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    width:800px;
+    margin: 0 auto;
+    position:relative;
+}
+.text-purple{
+    font-size: 1.7rem;
+    color: mediumpurple;
+    padding-bottom: 1rem;
+}
+.page-heading{
+    background-color: lightgray;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+}
+.page-heading__nav-item{
+    text-decoration:none;
+}
+.page-heading__nav-item:not(:last-child){
+    margin-right:1.7rem;
+}
+.overview{
+    width: 100%;
+    margin-bottom:2rem;
+}
+.overview-header{
+    padding-bottom: 1rem;
+}
+.overview-header__title{
+    position:relative;
+}
+.overview-header__title::after{
+    content: "TOP";
+    position: absolute;
+    right: -3rem;
+    bottom: 2rem;
+    font-size: 1.4rem;
+    background-color:yellow;
+}
+.overview-author-ava{
+    width: 10%;
+    padding-bottom:1.5rem;
+}
+.overview-content{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+.overview-content__image{
+    width:100%;
+    padding-bottom: 2rem;
+}
+.main-content{
+    padding-bottom: 1rem;
+    width:100%;
+    font-size: 1rem;
+}
+.main-content__paragraph{
+    margin-bottom: 1rem;
+}
+.main-content__link{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.main-content__list{
+    padding-bottom:1.5rem;
+    padding-left: 2rem;
+}
+.main-content-list__item:first-child {
+    font-weight: bold;
+}
+.main-content-list__item:last-child {
+    font-style: italic;
+}
+.related-posts{
+    border-top:blue solid 2px;
+    border-bottom:blue solid 2px;
+    background-color:gainsboro;
+    padding:2rem;
+}
+.related-posts__title{
+    font-weight:bold;
+    text-align: center;
+    font-size: 2rem;
+}
+.related-post-list{
+    list-style-type:none;
+    padding-left:2rem;
+}
+.related-post-list__item{
+    padding-bottom:2rem;
+}
+.related-post-list__item-title{
+    text-decoration:none;
+    font-size: 1.2rem;
+}
+.related-post-list__item-author{
+    font-weight: bold;
+}
+.related-post-list__item-thumbnail{
+    width:10%;
+}
+.related-post-list__item:last-child{
+    font-style: italic;
+}
+.related-post-list__item:first-child{
+    font-weight: bold;
+}
+footer{
+    margin-bottom: 1.3rem;
+}
+.btn-like{
+    background-color:slategray;
+    position:fixed;
+    padding:2rem 2rem;
+    bottom:1rem;
+    right:50px;
+    border:lightskyblue solid 2px;
+    cursor:pointer;
+}

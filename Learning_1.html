@@ -3,84 +3,81 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Learning 1</title>
   </head>
   <body>
-    <header>
-      <h1 style="color:#ff0000cc"> The code Magazine</h1>
+    <header class="page-heading">
+      <h1 class="text-purple page-heading__title">📔 The Code Magazine</h1>
       <nav>
-        <a href="google.com">blog</a>
-        <a href="#">Challenges</a>
-        <a href="#">Flexbox</a>
-        <a href="#">Css Grid</a>
-        <!--          <ul>-->
-        <!--            <li><a href="google.com">blog</a></li>-->
-        <!--            <li><a href="#">Challenges</a></li>-->
-        <!--            <li><a href="#">Flexbox</a></li>-->
-        <!--            <li><a href="#">Css Grid</a></li>-->
-        <!--          </ul>-->
+        <a class="text-purple page-heading__nav-item" href="#">Blog</a>
+        <a class="text-purple page-heading__nav-item" href="#">Challenges</a>
+        <a class="text-purple page-heading__nav-item" href="#">Flexbox</a>
+        <a class="text-purple page-heading__nav-item" href="#">Css Grid</a>
       </nav>
     </header>
     <main>
       <article>
-        <section>
-          <header>
-            <h2>The basic Language of the Web:HTML</h2>
-            <img src="./assets/imgs/girl.jpg" alt="the girl" style="width:100px;height:100px;">
-            <p>Posted by <b>Laura Jones</b> on Monday,June 21st 2028 </p>
-            <img src="./assets/imgs/Code1.jpg" alt="Image about code" style="width:400px;height:180px;">
+        <section class="overview">
+          <header class="overview__header">
+            <h2 class="text-purple overview-header__title">The basic Language of the Web: HTML</h2>
+            <img class="overview-author-ava" src="./assets/imgs/girl.jpg" alt="the girl">
+            <p class="overview-content">Posted by <b>Laura Jones</b> on Monday,June 21st 2028 </p>
           </header>
-          <p>All modern websites and weblication are built using three <i>fundamentals</i> technologies:
+            <img class="overview-content__image" src="./assets/imgs/Code1.jpg" alt="Image about code">
+          <p class="overview-content">All modern websites and weblication are built using three <i>fundamentals</i> technologies:
              HTML,CSS,JavaScipt.There are the languages of the Web.</p>
-          <p> In the post, let's focus on HTML. We will learn what HTML is all about, and why you should too learn
+          <p class="overview-content"> In the post, let's focus on HTML. We will learn what HTML is all about, and why you should too learn
               it.</p>
         </section>
 
-        <section>
-          <h2>What is HTML ?</h2>
-          <p> HTML stand for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage.It's a markup language for
+        <section class="main-content">
+          <h2 class="text-purple">What is HTML ?</h2>
+          <p class="main-content__paragraph"> HTML stand for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage.It's a markup language for
               developers use to structure and describe the content of a web page (not a programing language). </p>
-          <p>HTML consists of elements that describe different types of contents :
+          <p class="main-content__paragraph">HTML consists of elements that describe different types of contents :
              paragraph,links,images,heading,videos,etc.Web browser understand HTML and render HTML code as a
              websites. </p>
-          <p> In HTMl,each element is made up of 3 parts:</p>
-          <ol>
-            <li>The opening tags</li>
-            <li>The closing tags</li>
-            <li>The actual elements</li>
+          <p class="main-content__paragraph"> In HTMl,each element is made up of 3 parts:</p>
+          <ol class="main-content__list">
+            <li class="main-content-list__item">The opening tags</li>
+            <li class="main-content-list__item">The closing tags</li>
+            <li class="main-content-list__item">The actual elements</li>
           </ol>
-          <p>You can learn more at the <a href="#">MDN Web Docs</a></p>
+          <p class="main-content__paragraph">You can learn more at the <a class="text-purple main-content__link" href="#">MDN Web Docs</a></p>
         </section>
 
-        <section>
-          <h2> Why should you learn HTML ?</h2>
-          <p>There are countless reasons for learning the fundamental language of the Web. Here are 5 of them:</p>
-          <ul>
-            <li> To be able to use the fundamental web dev language</li>
-            <li>To hand-craft beautiful websites instead of relying on tools like WordPress or Wix</li>
-            <li>To build web applications</li>
-            <li>To impress friends</li>
-            <li>To have fun</li>
+        <section class="main-content">
+          <h2 class="text-purple"> Why should you learn HTML ?</h2>
+          <p class="main-content__paragraph">There are countless reasons for learning the fundamental language of the Web. Here are 5 of them:</p>
+          <ul class="main-content__list">
+            <li class="main-content-list__item"> To be able to use the fundamental web dev language</li>
+            <li class="main-content-list__item">To hand-craft beautiful websites instead of relying on tools like WordPress or Wix</li>
+            <li class="main-content-list__item">To build web applications</li>
+            <li class="main-content-list__item">To impress friends</li>
+            <li class="main-content-list__item">To have fun 😀</li>
           </ul>
-          <p>Hopefully you learn something new here.See you next time !</p>
+          <p class="main-content__paragraph">Hopefully you learn something new here.See you next time !</p>
         </section>
       </article>
 
-      <aside>
-        <h3>Related posts</h3>
-        <ul>
-          <li><img src="./assets/imgs/Codingman.jpg" alt="The man is coding sth" width="80" height="80">
-            <a href="#">How to learn Wev development</a>
-            <p>By Jonas Schmedtmann</p>
+      <aside class="related-posts">
+        <h3 class="related-posts__title">Related posts</h3>
+        <ul class="related-post-list">
+          <li class="related-post-list__item ">
+            <img class="related-post-list__item-thumbnail" src="./assets/imgs/Codingman.jpg" alt="The man is coding sth">
+            <a class="text-purple related-post-list__item-title" href="#">How to learn Wev development</a>
+            <p class="related-post-list__item-author">By Jonas Schmedtmann</p>
           </li>
-          <li><img src="./assets/imgs/Thunder.jpg" alt="Thunder" width="80" height="80">
-            <a href="#">The Unknown Power of CSS</a>
-            <p>By Jim Dillon</p>
+          <li class="related-post-list__item">
+            <img class="related-post-list__item-thumbnail" src="./assets/imgs/Thunder.jpg" alt="Thunder">
+            <a class="text-purple related-post-list__item-title" href="#">The Unknown Power of CSS</a>
+            <p class="related-post-list__item-author">By Jim Dillon</p>
           </li>
-          <li><img src="./assets/imgs/Code.jpg" alt="Just an image about code" width="80" height="80">
-            <a href="#">How to learn Wev development</a>
-            <p>By Matilda</p>
+          <li class="related-post-list__item">
+            <img class="related-post-list__item-thumbnail" src="./assets/imgs/Code.jpg" alt="Just an image about code">
+            <a class="text-purple related-post-list__item-title" href="#">How to learn Wev development</a>
+            <p class="related-post-list__item-author">By Matilda</p>
           </li>
         </ul>
       </aside>
@@ -89,6 +86,7 @@
     <footer>
       <p>Copyright 2027 by The Code Magazine</p>
     </footer>
+    <div class="btn-like"> Like</div>
 
   </body>
 </html>
