@@ -1,0 +1,121 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    width:800px;
+    margin: 1rem auto;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+}
+body::before {
+    content: "Sale";
+    position: absolute;
+    background-color:red;
+    color:white;
+    font-size:1.5rem;
+    left:-2rem;
+    top:-1rem;
+    padding:0 1rem;
+}
+.product-name{
+    background-color: lightgray;
+    text-align: center;
+    padding:1rem;
+    font-weight:bold;
+}
+.product-container {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:10px;
+}
+.product-pic{
+    width:250px;
+}
+.product-info{
+    padding:1rem 1rem 0 ;
+    width:100%;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+.product-price{
+    font-size:1.4rem;
+    font-weight:bold;
+    margin-bottom:1.2rem;
+}
+.product-shipping-fee{
+    position:absolute;
+    font-size:1rem;
+    right:2rem;
+    top:1.6rem;
+}
+.product-info__details{
+    font-size:1rem;
+}
+.product-more-info{
+    color:black;
+    margin-bottom:1.3rem;
+}
+.product-color{
+    width:100%;
+    height:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap:5px;
+}
+.product-color__first{
+    width:20px;
+    background-color:black;
+}
+.product-color__second{
+    width:20px;
+    background-color:cornflowerblue;
+}
+.product-color__third{
+    width:20px;
+    background-color:red;
+}
+.product-color__fourth{
+    width:20px;
+    background-color:yellow;
+}
+.product-color__fifth{
+    width:20px;
+    background-color:green;
+}
+.product-color__sixth{
+    width:20px;
+    background-color:saddlebrown;
+}
+.product-details-container{
+    padding:1rem 1rem 0;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:10px;
+}
+.product-details-content__list{
+    padding-left:2rem;
+}
+.product-details:first-child{
+    font-weight:bold;
+}
+.btn-add-to-cart{
+    width:100%;
+    height:50px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding-top:2rem;
+    cursor:pointer;
+}
