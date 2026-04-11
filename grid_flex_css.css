@@ -1,0 +1,115 @@
+*, *::before,*::after {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    width:800px;
+    margin: 1rem auto;
+    position:relative;
+}
+.container{
+    border:black solid 2px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.container::before {
+    content: "Sale";
+    position: absolute;
+    background-color:red;
+    color:white;
+    font-size:1.5rem;
+    left:-2rem;
+    top:-1rem;
+    padding:0 1rem;
+}
+.product-flex-row{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:10px;
+}
+.product-flex-col{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:15px;
+}
+.product-name{
+    width:100%;
+    grid-area: header;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size:1.2rem;
+    background-color:lightgray;
+}
+.product-body{
+    grid-area: main;
+}
+.product-image{
+    width: 250px;
+}
+.product-info{
+    padding:10px;
+}
+.product-fee{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:5px;
+}
+.price{
+    font-weight:bold;
+    font-size:1.5rem;
+}
+.shipping-fee{
+    padding:10px;
+}
+.product-overview{
+    color:black;
+}
+.product-color{
+    height:20px;
+}
+.product-color__item{
+    width:20px;
+}
+.product-black{
+    background-color:black;
+}
+.product-blue{
+    background-color:blue;
+}
+.product-red{
+    background-color:red;
+}
+.product-yellow{
+    background-color:yellow;
+}
+.product-green{
+    background-color:green;
+}
+.product-brown{
+    background-color:brown;
+}
+.product-detail__list{
+    padding-left:1.5rem;
+}
+.btn-add-to-cart{
+    /*width:100%;*/
+    grid-area: footer;
+    text-align: center;
+    font-size: 2rem;
+    color:white;
+    background-color:black;
+    cursor:pointer;
+}
